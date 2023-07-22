@@ -1,0 +1,88 @@
+@import url(https://db.onlinewebfonts.com/c/240a7cb10b49b02c94ceddc459d385a9?family=Gagalin-Regular);
+* {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;  
+}
+body {
+  width:100vw;
+}
+.img-text-wrapper{
+  margin-top: 20px;
+  
+}
+.img-text-wrapper .img-box{
+  width: 353.1px;
+  height: 307.9px;
+  background-image: url('../img/lookup.jpg');
+  background-size: cover;
+  background-position: center center;
+  float: left;
+  margin: 0 20px 0 20px;
+  
+}
+.img-text-wrapper h2{
+  font-family: "Gagalin-Regular";
+}
+.c-lists{
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Adjust the minmax values as needed */
+  grid-gap: 10px;
+}
+.c-list{
+  /* flex: 0 0 calc(33.33% - 10px);
+  /* margin-bottom: 10px;  */
+  border: 1px solid #ccc;  
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+footer{
+  height: 80px;
+}
+  .item-group {
+    --xyz-translate-y: -350%;
+    --xyz-ease: cubic-bezier(0.5, -1.5, 0.5, 1.5);
+  }
+@media screen and (max-width: 1600px) and (min-width: 1324px){
+  .two-head{
+     margin-top: 60px; 
+  }
+}
+@media (max-width: 1000px) {
+  .c-list{
+    width: 350px;
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 0fr)); */
+  }
+}
+
+@media (max-width: 850px) {
+  .img-text-wrapper .img-box {
+    width: 300px;
+    height: 300px;
+    float: none;
+    margin: 0;
+  } 
+  .img-box-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  .c-list{
+    /* width: 340px; */
+    width: 80% !important;
+    margin-left: 20px;
+  }
+  .text-content h2{
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8rem;
+    color: #27374D;
+  }
+  .text-content h2 , .text-content p {
+    padding: 12px;
+  }
+}
